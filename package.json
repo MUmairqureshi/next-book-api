@@ -9,17 +9,29 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@neondatabase/serverless": "^0.4.2",
     "@types/node": "18.15.13",
     "@types/react": "18.0.37",
     "@types/react-dom": "18.0.11",
     "autoprefixer": "10.4.14",
     "eslint": "8.38.0",
     "eslint-config-next": "13.3.0",
+    "jose": "^4.14.4",
+    "jsonwebtoken": "^9.0.0",
+    "kysely": "^0.24.2",
+    "kysely-neon": "^1.0.2",
+    "neon": "^2.0.0",
     "next": "13.3.0",
+    "pg": "^8.10.0",
+    "pgshims": "github:neondatabase/serverless",
     "postcss": "8.4.23",
+    "postgres": "^3.3.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "tailwindcss": "3.3.1",
     "typescript": "5.0.4"
+  },
+  "devDependencies": {
+    "@types/jsonwebtoken": "^9.0.2"
   }
 }
