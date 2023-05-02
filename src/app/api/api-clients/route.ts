@@ -33,5 +33,3 @@ console.log(token)
     NextResponse.json({ message: 'Server error' });
   }
 }
-
-
