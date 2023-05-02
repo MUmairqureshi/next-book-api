@@ -1,6 +1,6 @@
 import {SignJWT, jwtVerify, type JWTPayload} from 'jose';
 
-export async function sign(payload: Client, secret: string): Promise<string> {
+export async function sign(payload: client, secret: string): Promise<string> {
     const iat = Math.floor(Date.now() / 1000);
     const exp = iat + 60* 60; // one hour
 
