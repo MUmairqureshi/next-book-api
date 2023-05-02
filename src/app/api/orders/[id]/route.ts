@@ -9,7 +9,9 @@ type Props = {
     }
 }
  
-
+const conn = postgres({
+    ssl: require,
+});
 
 
 
