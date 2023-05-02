@@ -1,9 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import postgres from "postgres";
 
-const conn = postgres({
-    ssl: require,
-});
+ 
 
 type Props = {
     params: {
@@ -17,6 +15,11 @@ type Props = {
 
 
 export async function GET(request: NextRequest ,{params:{id}}:Props) {
+   
+    const conn = postgres({
+    ssl: require,
+});
+    
     try{
     const result = await conn.unsafe();
     if (result.length === 0) {
