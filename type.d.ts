@@ -20,3 +20,9 @@ type client = {
     clientEmail : string,
 
 } 
+
+type Pps = {
+    params: {
+      id: string
+    }
+}

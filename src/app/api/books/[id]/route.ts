@@ -12,8 +12,8 @@ type Props = {
 }
 
 export async function GET(request: NextRequest ,{params:{id}}:Props) {
-    try{
-    const result = await conn.unsafe(`SELECT * FROM bookdata where id as  id  = $1`, [id]);
+    try{  
+    const result = await conn.unsafe(`SELECT * FROM bookdata where id  = $1`, [id]);
     if (result.length === 0) {
         return  NextResponse.json({ message: "Book not found" });
       } else {
